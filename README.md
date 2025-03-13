@@ -14,7 +14,7 @@ Detta REST API tillhandahåller CRUD-funktioner (Create, Read, Update, Delete) f
 
 GET /
 
-Returnerar en kort beskrivning av API:t och dess användning.
+Returnerar en sträng där det står "Welcome" som är en h1:a.
 
 Exempel:
 

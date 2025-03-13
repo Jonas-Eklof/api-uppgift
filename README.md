@@ -4,13 +4,13 @@
 
 http://localhost:3000
 
-Beskrivning
+## Beskrivning
 
 Detta REST API tillhandahåller CRUD-funktioner (Create, Read, Update, Delete) för att hantera användare. API:t använder Express och JSON-format för datakommunikation.
 
-Endpoints
+## Endpoints
 
-1. Root - API Information
+### 1. Root - API Information
 
 GET /
 
@@ -24,7 +24,7 @@ Svar:
 
 <h1>Welcome</h1>
 
-2. Hämta alla användare
+### 2. Hämta alla användare
 
 GET /users
 
@@ -41,7 +41,7 @@ Svar:
   { "id": 2, "name": "Bob" }
 ]
 
-3. Hämta en specifik användare
+### 3. Hämta en specifik användare
 
 GET /users/************:id
 
@@ -68,7 +68,7 @@ Om användaren inte hittas:
   "message": "Användaren kunde inte hittas"
 }
 
-4. Skapa en ny användare
+### 4. Skapa en ny användare
 
 POST /users
 
@@ -97,7 +97,7 @@ Om name saknas:
   "message": "Namn är obligatoriskt"
 }
 
-5. Uppdatera en användare
+### 5. Uppdatera en användare
 
 PUT /users/************:id
 
@@ -126,7 +126,7 @@ Om användaren inte finns:
   "message": "Användaren hittades inte"
 }
 
-6. Ta bort en användare
+### 6. Ta bort en användare
 
 DELETE /users/************:id
 
@@ -148,7 +148,7 @@ Om användaren inte finns:
   "message": "Användaren hittades inte"
 }
 
-Felmeddelanden
+### Felmeddelanden
 
 400 Bad Request: Om ett obligatoriskt fält saknas eller om data är ogiltig.
 
@@ -156,7 +156,7 @@ Felmeddelanden
 
 500 Internal Server Error: Om det sker ett oväntat serverfel.
 
-Exempel på HTTP Statuskoder
+### Exempel på HTTP Statuskoder
 
 200 OK: Begäran lyckades.
 
@@ -168,6 +168,6 @@ Exempel på HTTP Statuskoder
 
 404 Not Found: Resursen finns inte.
 
-Testa API:t
+### Testa API:t
 
 För att testa detta API kan du använda verktyg som Postman eller Insomnia. Dessa gör det enkelt att skicka HTTP-förfrågningar till servern och visa svaren i användarvänliga format.

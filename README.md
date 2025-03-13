@@ -24,6 +24,8 @@ Svar:
 
 <h1>Welcome</h1>
 
+
+
 ### 2. Hämta alla användare
 
 GET /users
@@ -40,6 +42,8 @@ Svar:
   { "id": 1, "name": "Alice" },
   { "id": 2, "name": "Bob" }
 ]
+
+
 
 ### 3. Hämta en specifik användare
 
@@ -67,6 +71,8 @@ Om användaren inte hittas:
 {
   "message": "Användaren kunde inte hittas"
 }
+
+
 
 ### 4. Skapa en ny användare
 
@@ -97,6 +103,8 @@ Om name saknas:
   "message": "Namn är obligatoriskt"
 }
 
+
+
 ### 5. Uppdatera en användare
 
 PUT /users/************:id
@@ -126,6 +134,8 @@ Om användaren inte finns:
   "message": "Användaren hittades inte"
 }
 
+
+
 ### 6. Ta bort en användare
 
 DELETE /users/************:id
@@ -148,6 +158,7 @@ Om användaren inte finns:
   "message": "Användaren hittades inte"
 }
 
+
 ### Felmeddelanden
 
 400 Bad Request: Om ett obligatoriskt fält saknas eller om data är ogiltig.
@@ -155,6 +166,8 @@ Om användaren inte finns:
 404 Not Found: Om den angivna resursen (t.ex. användare) inte finns.
 
 500 Internal Server Error: Om det sker ett oväntat serverfel.
+
+
 
 ### Exempel på HTTP Statuskoder
 
@@ -167,6 +180,7 @@ Om användaren inte finns:
 400 Bad Request: Fel i begäran, t.ex. saknas obligatorisk data.
 
 404 Not Found: Resursen finns inte.
+
 
 ### Testa API:t
 
